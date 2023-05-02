@@ -1,9 +1,37 @@
-.mam{
+*{
+    margin: 0;
+}
+h1{
+    background-position: 40%;
+    background-color: greenyellow;
+    position: relative;
+    font-size: 500%;
+}
+.filter{
+    position: relative;
+    left: 10%;
+    top: 13%;
     color: red;
-   height:  100px;
-   left: 40px;
+    font-size: 300%;
+   
 }
-.searchbutt{
-    left: 1000px;
+.d3 {
+    top: 12%;
+    left: 30%;
+    position: absolute;
 }
-=green
+.d3 input{
+    width: 700px;
+    height: 40px;
+}
+.d3 button {
+    height: 46px;
+    width: 62px;
+    position: absolute;
+}
+#selectItem{
+    position: absolute;
+    height: 50px;
+    left: 75%;
+    top: 12%;
+}
