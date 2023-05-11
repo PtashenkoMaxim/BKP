@@ -87,7 +87,7 @@
                   <input  type="text" placeholder="Искать здесь...">
                   <button  type="submit">search</button>
                 </div>
-            <form action="function.php" method="post">
+                <form action="function.php" method="post">
                 <input type="text"  name="login" id="login">
                 <button type="submit" id="submit" >zaregat</button>
 
