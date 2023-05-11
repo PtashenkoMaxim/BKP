@@ -3,7 +3,7 @@
 }
 h1{
     background-position: 40%;
-    background-color: rgb(177, 93, 14);
+    background-color: rgb(252, 10, 10);
     position: relative;
     font-size: 500%;
 }
@@ -17,8 +17,8 @@ h1{
 }
 .d3 {
     position: absolute;
-    top: 32%;
-    left: 60%;
+    top: 12%;
+    left: 30%;
     
 }
 .d3 input {
