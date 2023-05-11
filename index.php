@@ -1,11 +1,14 @@
+
 <!DOCTYPE html>
     <head>
         <title> MaxSales</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="index.css">
     </head>
     <html lang="en">
     <body>
-        <script src="main.js"></script>
-        <link rel="stylesheet" href="index.css">
+        
+        
         <div>
             <meta content="width=device-width">
             <h1 align="center">MaxSales</h1>
@@ -84,4 +87,9 @@
                   <input  type="text" placeholder="Искать здесь...">
                   <button  type="submit">search</button>
                 </div>
+            <form action="function.php" method="post">
+                <input type="text"  name="login" id="login">
+                <button type="submit" id="submit" >zaregat</button>
+
+            </form>
     </body>
