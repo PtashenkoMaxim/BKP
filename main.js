@@ -1,3 +1,0 @@
-function alerteDD(){
-    alert('mamasita');
-}
