@@ -99,7 +99,7 @@
 
            <div class="modal" id="mymodal">
                 <div class="modalview">
-                    <form action="/php/function.php" method="post">
+                    <form action="/php/AddOffer.php" method="post">
 
                         <span>choose the city</span><br>
                         <select required id="chooisecity" name="city" class="city">
@@ -161,4 +161,7 @@
                     <button class="closemymodal" id="closemymodal">закрыть</button>
                 </div>
             </div>
+            <form action="/php/database.php" method="post">
+                        <button>naity</button>
+                    </form>
         </body>
