@@ -2,8 +2,8 @@
 <!DOCTYPE html>
     <head>
         <title> MaxSales</title>
-        <script defer src="/js/function.js"></script>
-        <link rel="stylesheet" href="/css/indexf.css">
+        <script defer src="/js/functions.js"></script>
+        <link rel="stylesheet" href="/css/index.css">
     </head>
     <html lang="en">
      
@@ -11,7 +11,6 @@
     <body>
         
         <div>
-        <img src = "/img/650146611.jpg" class="background" >
             <meta content="width=device-width">
             <h1 align="center">MaxSales</h1>
             <select id="selectroom">
@@ -62,7 +61,8 @@
             <input type="checkbox">monolithic house
             <input type="checkbox">panel house
             <input type="checkbox">wooden house
-            </div>
+        </div>
+        
         <div class="d3">
             <input  type="text" placeholder="Искать здесь...">
             <button  type="submit">search</button>
