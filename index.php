@@ -6,10 +6,12 @@
         <link rel="stylesheet" href="/css/indexf.css">
     </head>
     <html lang="en">
+     
+
     <body>
         
-        
         <div>
+        <img src = "/img/650146611.jpg" class="background" >
             <meta content="width=device-width">
             <h1 align="center">MaxSales</h1>
             <select id="selectroom">
@@ -22,45 +24,45 @@
                 <option id="five">5</option>
                 <option id="six">6</option>
             </select><br><br>
-        </div>
-
             <p>availability of a garage
                 <input type="checkbox" value="yes"><br><br>
             <p>choose price</p>
             <input data-marker="price/from" placeholder="from" maxlength="15" type="text" id="pricefrom">
             <input data-marker="price/from" placeholder="before" maxlength="15" type="text" id="pricebefore"><br><br>
+
             <p>choose floor</p>
             <input data-marker="price/from" placeholder="from" maxlength="3" type="text" id="floorfrom">
             <input data-marker="price/from" placeholder="before" maxlength="3" type="text" id="floorfrom"><br><br>
+
             <p>Housing type</p>
-        <div>
             <input type="radio" name="sex" checked>nevermind
             <input type="radio"name="sex">apartment
             <input type="radio"name="sex">house</p><br>
-        </div>
 
-        <div>
             <p>the presence of a balcony or loggia</p>
             <input type="radio" name="sex1" checked>nevermind
             <input type="radio"name="sex1">balcony
             <input type="radio"name="sex1">loggia</p><br>
-        </div>
 
             <p>number of floors in the house</p>
             <input data-marker="price/from" placeholder="max" maxlength="3" type="text" id="housefloor"><br><br>
+
             <p>availability of an elevator</p>
             <input type="checkbox">service elevator
             <input type="checkbox">passenger elevator<br><br>
+
             <p>Availability Parking</p>
             <input type="checkbox">underground
             <input type="checkbox">ground multilevel<br>
             <input type="checkbox">open in the yard
             <input type="checkbox">with a barrier in the yard<br><br>
+
             <p>house type</p>
             <input type="checkbox">brick house
             <input type="checkbox">monolithic house
             <input type="checkbox">panel house
             <input type="checkbox">wooden house
+            </div>
         <div class="d3">
             <input  type="text" placeholder="Искать здесь...">
             <button  type="submit">search</button>
@@ -145,6 +147,10 @@
                         <input type="checkbox" name="serviceEl" ><span class="text">service elevator</span>
                         <input type="checkbox" name="passengerEl"><span class="text">passenger elevator</span><br><br>
 
+                        <span>availability of an elevator</span><br>
+                        <input type="checkbox" name="ground_parking" ><span class="text">ground parking</span>
+                        <input type="checkbox" name="underground_parking"><span class="text">underground parking</span><br><br>
+
                         <span>availability of a garage</span>
                         <input type="checkbox" name="garage" value="yes"><br>
 
@@ -153,6 +159,9 @@
 
                         <span class="text">write your name</span><br>
                         <input  required type="text"  name="name" id="name"><br><br><br>
+
+                        <span class="text">write a description of the offer</span><br>
+                        <input require type="text" name="description" id="description">
 
                         <button class="adduser" id="adduser">добавить</button>
 
@@ -164,4 +173,6 @@
             <form action="/php/database.php" method="post">
                         <button>naity</button>
                     </form>
+
+        </div>
         </body>

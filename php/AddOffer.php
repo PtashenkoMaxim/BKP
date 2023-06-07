@@ -21,6 +21,20 @@
       $serviceEl = 'no';
    }
 
+   if($_POST['ground_parking'] == true){
+      $ground_parking = 'yes';
+   }
+   else{
+      $ground_parking = 'no';
+   }
+
+   if($_POST['underground_parking'] == true){
+      $underground_parking = 'yes';
+   }
+   else{
+      $underground_parking = 'no';
+   }
+
    if($_POST['passengerEl'] == true){
       $passengerEl = 'yes';
    }
@@ -28,17 +42,15 @@
       $passengerEl = 'no';
    }
 
-   if($_POST['name'] == null){
-      echo "Вы ответили \"Да\", спасибо за ответ<br>";
-   }
    $city = filter_var(trim($_POST['city']));
    $floor = filter_var(trim($_POST['floor']));
    $name = filter_var(trim($_POST['name']));
    $price = filter_var(trim($_POST['price']));
    $login = filter_var(trim($_POST['login']));
+   $description = filter_var(trim($_POST['description']));
    $mysql = new mysqli('bkp','root','','MaxSales');
-   $mysql->query("INSERT INTO `offer`(`city`,`room`,`garage`,`floor`,`service_elevator`,`passenger_elevator`,`price`,`name`) 
-                              VALUES ('$city','$room','$garage','$floor','$serviceEl','$passengerEl','$price','$name')");
+   $mysql->query("INSERT INTO `offers`(`city`,`room`,`garage`,`floor`,`service_elevator`,`passenger_elevator`,`price`,`name`,`description`,`ground_parking`,`underground_parking`) 
+                              VALUES ('$city','$room','$garage','$floor','$serviceEl','$passengerEl','$price','$name','$description','$ground_parking','$underground_parking')");
    $mysql->close();
    header('Location: /');
 ?>
