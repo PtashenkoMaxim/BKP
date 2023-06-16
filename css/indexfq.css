@@ -4,9 +4,10 @@
 
 h1{
     background-position: 40%;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(29, 16, 223);
     position: relative;
     font-size: 500%;
+    height: 100px;
 }
 .filter{
     position: relative;
@@ -39,15 +40,15 @@ h1{
 }
 
 
-.modal{
+.modalnik{
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    color: red;
+    color: rgb(255, 255, 255);
     z-index: 99998;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     overflow-y:auto;
@@ -59,16 +60,17 @@ h1{
 .modalview{
     position: absolute;
     width: 800px;
-    height: 700px;
+    height: 1300px;
     padding: 45px;
     z-index: 1;
     top: 10%;
-    left: 25%;
     background-color: blue;
     transform: scale(0);
     transition: transform .8s;
 }
-
+.description{
+    height: 100px;
+}
 .closemymodal{
     position: absolute;
     top: 8px;
@@ -83,12 +85,12 @@ h1{
 
 }
 
-.modal.open{
+.modalnik.open{
     visibility: visible;
     opacity: 1;
 }
 
-.modal.open .modalview{
+.modalnik.open .modalview{
     transform: scale(1);
 }
 .modalview .city{
@@ -100,6 +102,10 @@ h1{
     width: 300px;
     height: 40px;   
 }
+.modalview .description{
+    width: 200px;
+    height: 300px;
+}
 .modalview .inputhouse {
     width: 300px;
     height: 40px; 
@@ -107,4 +113,55 @@ h1{
 .modalview span{
     margin-top: 30px;
     font-size: 3vh;
+}
+.register{
+    position: absolute;
+    top: 3%;
+    right: 15%;
+    width: 200px;
+    height: 49px;
+}
+.login{
+    position: absolute;
+    height: 55px;
+    width: 250px;
+    top: 20%;
+    left: 30%;
+}
+.number{
+    position: absolute;
+    height: 55px;
+    width: 250px;
+    top: 30%;
+    left: 30%;
+
+}
+.password{
+    position: absolute;
+    height: 55px;
+    width: 250px;
+    top: 40%;
+     left: 30%;
+}
+.modalreg{
+    position: absolute;
+    
+    top: 55%;
+     left: 30%;
+}
+.signin{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.test{
+    position: absolute;
+    top: 45%;
+    left: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

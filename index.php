@@ -3,7 +3,10 @@
     <head>
         <title> MaxSales</title>
         <script defer src="/js/functions.js"></script>
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/indexfq.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     </head>
     <html lang="en">
      
@@ -14,8 +17,8 @@
             <meta content="width=device-width">
             <h1 align="center">MaxSales</h1>
             <select id="selectroom">
-                <option id="all">choose the number of rooms</option>
-                <option id="zero">studio</option>
+                <option id="all">выберите количество комнат</option>
+                <option id="zero">студия</option>
                 <option id="one">1</option>
                 <option id="two">2</option>
                 <option id="three">3</option>
@@ -23,44 +26,44 @@
                 <option id="five">5</option>
                 <option id="six">6</option>
             </select><br><br>
-            <p>availability of a garage
+            <p>наличие гаража
                 <input type="checkbox" value="yes"><br><br>
-            <p>choose price</p>
-            <input data-marker="price/from" placeholder="from" maxlength="15" type="text" id="pricefrom">
-            <input data-marker="price/from" placeholder="before" maxlength="15" type="text" id="pricebefore"><br><br>
+            <p>выберите цену</p>
+            <input data-marker="price/from" placeholder="от" maxlength="15" type="text" id="pricefrom">
+            <input data-marker="price/from" placeholder="до" maxlength="15" type="text" id="pricebefore"><br><br>
 
-            <p>choose floor</p>
-            <input data-marker="price/from" placeholder="from" maxlength="3" type="text" id="floorfrom">
-            <input data-marker="price/from" placeholder="before" maxlength="3" type="text" id="floorfrom"><br><br>
+            <p>выберите этаж</p>
+            <input data-marker="price/from" placeholder="от" maxlength="3" type="text" id="floorfrom">
+            <input data-marker="price/from" placeholder="до" maxlength="3" type="text" id="floorfrom"><br><br>
 
-            <p>Housing type</p>
-            <input type="radio" name="sex" checked>nevermind
-            <input type="radio"name="sex">apartment
-            <input type="radio"name="sex">house</p><br>
+            <p>выберите тип дома</p>
+            <input type="radio" name="sex" checked>неважно
+            <input type="radio"name="sex">апартаменты
+            <input type="radio"name="sex">частный дом</p><br>
 
-            <p>the presence of a balcony or loggia</p>
-            <input type="radio" name="sex1" checked>nevermind
-            <input type="radio"name="sex1">balcony
-            <input type="radio"name="sex1">loggia</p><br>
+            <p>наличие балкона или лоджии</p>
+            <input type="radio" name="sex1" checked>неважно
+            <input type="radio"name="sex1">балкон
+            <input type="radio"name="sex1">лоджия</p><br>
 
-            <p>number of floors in the house</p>
-            <input data-marker="price/from" placeholder="max" maxlength="3" type="text" id="housefloor"><br><br>
+            <p>количество этажей в доме</p>
+            <input data-marker="price/from" placeholder="неважно" maxlength="3" type="text" id="housefloor"><br><br>
 
-            <p>availability of an elevator</p>
-            <input type="checkbox">service elevator
-            <input type="checkbox">passenger elevator<br><br>
+            <p>наличие лифта</p>
+            <input type="checkbox">грузовой лифт
+            <input type="checkbox">пассажирский лифт<br><br>
 
-            <p>Availability Parking</p>
-            <input type="checkbox">underground
-            <input type="checkbox">ground multilevel<br>
-            <input type="checkbox">open in the yard
-            <input type="checkbox">with a barrier in the yard<br><br>
+            <p>наличие парковки</p>
+            <input type="checkbox">подземная
+            <input type="checkbox">наземная многоуровневая<br>
+            <input type="checkbox">открытая во дворе
+            <input type="checkbox">во дворе со шлакбаумом<br><br>
 
-            <p>house type</p>
-            <input type="checkbox">brick house
-            <input type="checkbox">monolithic house
-            <input type="checkbox">panel house
-            <input type="checkbox">wooden house
+            <p>тип постройки дома</p>
+            <input type="checkbox">кирпичный дом
+            <input type="checkbox">монолитный дом
+            <input type="checkbox">панельный дом
+            <input type="checkbox">деревянный дом
         </div>
         
         <div class="d3">
@@ -69,7 +72,7 @@
         </div>
             
         <select id="selectItem" name="gorod">
-            <option id="all">choose the city</option>
+            <option id="all">Выберите город</option>
             <option id="moskva">Москва</option>
             <option id="chelyabinsk">Челябинск</option>
             <option id="piter">Санкт-Петербург</option>
@@ -93,17 +96,17 @@
         </select>
 
             <input type="text">
-            <button type="submit" id="submit" >zaregat</button>
+            <button type="submit" id="submit" >зарагестрировать объявление</button>
             <br>
             <button>показать</button>
             <button id="modalopen">Создать обьявление</button>
 
 
-           <div class="modal" id="mymodal">
+           <div class="modalnik" id="mymodal">
                 <div class="modalview">
                     <form action="/php/AddOffer.php" method="post">
 
-                        <span>choose the city</span><br>
+                        <span>Выберите город</span><br>
                         <select required id="chooisecity" name="city" class="city">
                             <option id="all"></option>
                             <option id="moskva">Москва</option>
@@ -128,10 +131,10 @@
                             <option id="izhevsk">Ижевск</option>
                         </select><br>
 
-                        <span>choose the number of rooms</span><br>
+                        <span>Выберите колличество комнат в квартире</span><br>
                         <select  required id="selectroom" name="room" class="room">
                             <option id="all"></option>
-                            <option id="zero">studio</option>
+                            <option id="zero">студия</option>
                             <option id="one">1</option>
                             <option id="two">2</option>
                             <option id="three">3</option>
@@ -140,39 +143,49 @@
                             <option id="six">6</option>
                         </select><br>
 
-                        <span class="text">floor number in the house</span><br>
+                        <span class="text">Введите номер этажа на котором расположена квартира</span><br>
                         <input  required class="inputhouse" data-marker="price/from" placeholder="choose floor" maxlength="3" type="text" id="housefloor" name="floor"><br><br>
 
-                        <span>availability of an elevator</span><br>
-                        <input type="checkbox" name="serviceEl" ><span class="text">service elevator</span>
-                        <input type="checkbox" name="passengerEl"><span class="text">passenger elevator</span><br><br>
+                        <span>Укажите наличие лифта</span><br>
+                        <input type="checkbox" name="serviceEl" ><span class="text">грузовой лифт</span>
+                        <input type="checkbox" name="passengerEl"><span class="text">пассажирский лифт</span><br><br>
 
-                        <span>availability of an elevator</span><br>
-                        <input type="checkbox" name="ground_parking" ><span class="text">ground parking</span>
-                        <input type="checkbox" name="underground_parking"><span class="text">underground parking</span><br><br>
+                        <span>Укажите наличие парковки</span><br>
+                        <input type="checkbox" name="ground_parking" ><span class="text">наземная парковка</span>
+                        <input type="checkbox" name="underground_parking"><span class="text">подземная парковка</span><br><br>
 
-                        <span>availability of a garage</span>
+                        <span>Укажите наличие гаража</span>
                         <input type="checkbox" name="garage" value="yes"><br>
 
-                        <span class="text">offer your price</span><br>
+                        <span class="text">Укажите предложенную вами цену</span><br>
                         <input  required type="text"  name="price" id="price"><br>
 
-                        <span class="text">write your name</span><br>
+                        <span class="text">Укажите своё имя</span><br>
                         <input  required type="text"  name="name" id="name"><br><br><br>
 
-                        <span class="text">write a description of the offer</span><br>
-                        <input require type="text" name="description" id="description">
+                        <span class="text">Опишите свой объект подробнее</span><br>
+                        <textarea require type="text" class="description" name="description" id="description"></textarea>
 
-                        <button class="adduser" id="adduser">добавить</button>
+                        <button class="adduser" id="adduser">Добавить</button>
 
                        
                     </form>
-                    <button class="closemymodal" id="closemymodal">закрыть</button>
+                    <button class="closemymodal" id="closemymodal">Закрыть</button>
                 </div>
+                
             </div>
-            <form action="/php/database.php" method="post">
-                        <button>naity</button>
+            <form action="/php/register.php" method="post">
+                <button class="register" id="registr">Зарегестрироваться</button>
+            </form>
+
+
+
+
+
+            <form action="/php/signin.php" method="post">
+                        <button>найти</button>
                     </form>
+            
 
         </div>
         </body>
