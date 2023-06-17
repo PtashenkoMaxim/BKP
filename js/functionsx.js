@@ -16,3 +16,7 @@ document.getElementById("mymodal").addEventListener('click', event => {
     if (event._isClickWithInModal) return;
     event.currentTarget.classList.remove('open');
 });
+document.getElementById("logout").addEventListener("click",function(){
+    
+    alert('$_SESSION');
+})

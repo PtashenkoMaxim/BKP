@@ -4,7 +4,7 @@
 
 h1{
     background-position: 40%;
-    background-color: rgb(29, 16, 223);
+    background-color: rgb(6, 63, 219);
     position: relative;
     font-size: 500%;
     height: 100px;
@@ -94,19 +94,32 @@ h1{
     transform: scale(1);
 }
 .modalview .city{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
     position: relative;
+    border-radius: 3px;
+    padding: 10px;
     width: 300px;
     height: 40px;   
 }
 .modalview .room{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    border-radius: 3px;
+    padding: 10px;
     width: 300px;
     height: 40px;   
 }
 .modalview .description{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
     width: 200px;
     height: 300px;
 }
 .modalview .inputhouse {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
     width: 300px;
     height: 40px; 
 }
@@ -125,7 +138,7 @@ h1{
     position: absolute;
     height: 55px;
     width: 250px;
-    top: 20%;
+    top: 25%;
     left: 30%;
 }
 .number{
@@ -140,13 +153,13 @@ h1{
     position: absolute;
     height: 55px;
     width: 250px;
-    top: 40%;
+    top: 35%;
      left: 30%;
 }
 .modalreg{
     position: absolute;
     
-    top: 55%;
+    top: 45%;
      left: 30%;
 }
 .signin{
@@ -164,4 +177,34 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.msg{
+    top: 50%;
+    left: 40%;
+    position: absolute;
+    border: 2px solid firebrick;
+    border-radius: 3px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    height: 50px;
+    width: 400px;
+}
+.username{
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    color: red;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 70px;
+}
+.mail{
+    position: absolute;
+    height: 55px;
+    width: 250px;
+    top: 40%;
+    left: 30%;
 }

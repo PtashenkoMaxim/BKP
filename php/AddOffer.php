@@ -1,4 +1,6 @@
 <?php
+   session_start();
+   
    if($_POST['garage'] == true){
       $garage = 'yes';
    }
@@ -41,7 +43,7 @@
    else{
       $passengerEl = 'no';
    }
-
+$creator = $_SESSION['name'];
    $city = filter_var(trim($_POST['city']));
    $floor = filter_var(trim($_POST['floor']));
    $name = filter_var(trim($_POST['name']));
@@ -49,8 +51,8 @@
    $login = filter_var(trim($_POST['login']));
    $description = filter_var(trim($_POST['description']));
    $mysql = new mysqli('bkp','root','','MaxSales');
-   $mysql->query("INSERT INTO `offers`(`city`,`room`,`garage`,`floor`,`service_elevator`,`passenger_elevator`,`price`,`name`,`description`,`ground_parking`,`underground_parking`) 
-                              VALUES ('$city','$room','$garage','$floor','$serviceEl','$passengerEl','$price','$name','$description','$ground_parking','$underground_parking')");
+   $mysql->query("INSERT INTO `offers`(`city`,`room`,`garage`,`floor`,`service_elevator`,`passenger_elevator`,`price`,`name`,`description`,`ground_parking`,`underground_parking`,`creator`) 
+                              VALUES ('$city','$room','$garage','$floor','$serviceEl','$passengerEl','$price','$name','$description','$ground_parking','$underground_parking','$creator')");
    $mysql->close();
    header('Location: /');
 ?>
